@@ -4206,6 +4206,12 @@
         .calendar-svg {
             width: 20px;
         }
+
+        .amp-close-image {
+       top: 5px;
+       right: 10px;
+       cursor: pointer;
+    }
     </style>
 </head>
 
@@ -4214,6 +4220,11 @@
     <section class="relative z2">
         <header style="padding: 0" class="ampstart-headerbar fixed flex justify-start items-center top-0 left-0 right-0 pl2 pr4 ">
                 <ul style="list-style-type: none; margin: 0; padding: 0; overflow: hidden; background-color: #333; position: fixed; top: 0; width:100%">
+
+                        <li style="margin-left: 30px; float: left;">
+                                <a href="index.html" class="amitech-results-navbar-icon h2 circle my1 md-my2">
+                                                <amp-img class="amitech-icon" layout="responsive" src="logo.png"></amp-img></a>
+                            </li>
                         <li style="margin-left: 20px; float: left; height: 100%">
                             <a style="display: block; color: white; text-align: center; padding: 14px 16px; text-decoration: none;" href="index.html">
                                 Home
@@ -4235,6 +4246,12 @@
             
             <nav class="ampstart-headerbar-nav ampstart-nav xs-hide sm-hide">
                 <ul style="list-style-type: none; margin: 0; padding: 0; overflow: hidden; background-color: #333; position: fixed; top: 0; width:100%">
+
+                        <li style="margin-left: 30px; float: left;">
+                                <a href="amitech.amp" class="amitech-results-navbar-icon h2 circle my1 md-my2">
+                                        <amp-img class="amitech-icon" layout="responsive" src="logo.png"></amp-img></a>
+                          </li> 
+
                     <li style="margin-left: 30px; float: left;">
                         <a style="display: block; color: white; text-align: center; padding: 14px 16px; text-decoration: none;" href="index.html">
                             Home
@@ -4243,11 +4260,6 @@
                     <li style="float: left;">
                         <a style="display: block; color: white; text-align: center; padding: 14px 16px; text-decoration: none;" href="events.html">
                             Events
-                        </a>
-                    </li>
-                    <li style="margin-right: 20px;float: right;">
-                        <a style="display: block; color: white; text-align: center; padding: 14px 16px; text-decoration: none;" href="About.html">
-                            About
                         </a>
                     </li>
                     <li style="float: right;">
@@ -4273,6 +4285,8 @@
     </section>
     <!-- Start Sidebar -->
     <amp-sidebar id="sidebar" class="ampstart-sidebar px3  amitech-sidebar" layout="nodisplay">
+            <amp-img class="amp-close-image" src="Close.png" width="20" height="20" alt="close sidebar" on="tap:sidebar.close" role="button" tabindex="0"></amp-img>
+        
         <div class="flex justify-start items-center ampstart-sidebar-header">
 
         </div>
@@ -4386,13 +4400,13 @@
                         </button>
                     </div>
                     <amp-lightbox style="background-color: rgba(0, 0, 0, 0.8)" id="schedule" layout="nodisplay" scrollable>
-                        <div style="color:beige; margin: 45px 5px 5px 0" align="right" tabindex="0">
+                        <div style="color:beige; margin: 40px 10px 10px 0" align="right" tabindex="0">
                             <h3>
                               <button class="ampstart-btn rounded" style="background: rgba(0, 0, 0, 0.1)" on="tap:schedule.close"><i class="fa fa-times"></i></button>
                             </h3>
                         </div>
                         <p align="center"> 
-                            <amp-img style="max-width: 1030px; max-height: 1619px; margin-bottom: 60px" src="events-schedule.png" alt="Events Schedule for AMITECH'18" layout="responsive" height="65em" width="50em">
+                            <amp-img style="max-width: 650px; max-height: 800px; margin-bottom: 60px" src="events-schedule.png" alt="Events Schedule for AMITECH'18" layout="responsive" height="65em" width="50em">
                             </amp-img> 
                         </p>
                     </amp-lightbox>
@@ -4717,7 +4731,7 @@
             <a href="#" class="amitech-link block gray">Sponsors</a>
             
             <span class="inline-block h2  circle white">
-    <a href="https://www.facebook.com/amitech.aset/" target="_blank">
+    <a href="https://www.facebook.com/amitech.aset/" target="_blank" title="Facebook">
      <svg class="amitech-icon amitech-icon-logo h2" viewbox="0 0 256 256">
 	   <g>
 		<path d="M241.871,256.001 C249.673,256.001 256,249.675 256,241.872 L256,14.129 C256,6.325 249.673,0 241.871,0 L14.129,0 C6.324,0 0,6.325 0,14.129 L0,241.872 C0,249.675 6.324,256.001 14.129,256.001 L241.871,256.001" fill="#395185"></path>
@@ -4726,7 +4740,7 @@
      </svg>
     </a> 
     &nbsp;&nbsp;&nbsp;
-    <a href="mailto:amitech2018@gmail.com" target="_blank"> 
+    <a href="mailto:amitech2018@gmail.com" target="_blank" title="Gmail"> 
      <svg class="amitech-icon amitech-icon-logo h2 " viewBox="0 0 256 194">
       <defs>
         <linearGradient x1="0.00388991071%" y1="49.997619%" x2="100.032232%" y2="49.997619%" id="linearGradient-1">
