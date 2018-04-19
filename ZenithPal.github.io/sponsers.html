@@ -766,22 +766,7 @@
             -ms-flex-line-pack: stretch;
             align-content: stretch
         }
-    
-        /* #sponsors h1 {
-            padding: 2vw 0 0 5vw;    
-            letter-spacing: normal;
-            /* line-height: 20px; */
-            /* color: #000;
-            font-size: 3.5rem;
-            font-weight: 700;    
-        } */
 
-        /* #sponsors p {
-            padding: 0 0 0 5vw;
-            letter-spacing: normal; */
-            /* line-height: 20px; */
-            /* color: #000;    
-        }  */
         .container {
             width: 100%;
             padding: 0 4vw;
@@ -790,38 +775,46 @@
         .spimage {
             border:2px solid #D3D3D3 ;
             border-radius: 5px; 
-            margin-bottom: 100px; 
+            margin-bottom: 6vw; 
         } 
 
         .card {
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-            max-width: 300px;
-            margin: auto;
+            width: 90%;
+            margin: 5% auto;
+            max-width: 400px;
             text-align: center;
             font-family: arial;
+            padding-bottom: 20px;
+            
         }
 
         .title {
             color: grey;
-            font-size: 18px;
-        }
+            font-size: 2.2vw;
+        } 
 
-        button {
-            border: none;
-            outline: 0;
-            display: inline-block;
-            padding: 8px;
-            color: white;
-            background-color: #000;
-            text-align: center;
-            cursor: pointer;
-            width: 100%;
-            font-size: 18px;
+        .sm-title {
+            color: grey;
+            font-size: 5vw;
+        } 
+        hr.style-four {
+            height: 12px;
+            border: 0;
+            box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
         }
-
 
         button:hover, a:hover {
             opacity: 0.7;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-column-gap: 8vw;
+            grid-row-gap: 6px;
+            /* background-color:; */
+            padding: 1vw 3vw; 
         }
 
     </style>
@@ -4434,30 +4427,72 @@
     <!-- End Sidebar -->
     <!-- End Navbar -->
     <div class="container">
-        <amp-img class="spimage xs-hide sm-hide" src="sponsers.png" layout="responsive" width="1200px" height="400px">
+        <amp-img class="spimage xs-hide sm-hide" src="Sponsers.png" layout="responsive" width="1250px" height="379px">
         </amp-img>
-        <amp-img class="spimage md-hide lg-hide" src="sponsers1.png" layout="responsive" width="1200px" height="400px">
+        <amp-img class="spimage md-hide lg-hide" src="sponsers1.png" layout="responsive" width="705px" height="350px">
         </amp-img>
-        
-        <div class="card">
-            <amp-img src="ace-academy.png" alt="Ace-academy" height="150px" width="200px" ></amp-img>
-            <h1>Ace Engineering Academy</h1>
-            <!-- <p class="title">CEO & Founder, Example</p> -->
-            <!-- <p>Harvard University</p> -->         
-        
-           <p><button>Contact</button></p>
-        </div>
-    </div>    
-    <!-- <pre style="height: 300px; margin: 0">
-        <div class="sponsor-backimg" style="height: 275px; background: url(sponsers.png) no-repeat center; background-size: cover">
-          <div id="sponsors">  
-            <h1>Our Sponsors</h1>
-            <p>Mentors give you perspective, sponsers give you oppurtunity.</p>
-          </div>
-        </div> 
-    </pre> -->
+        <div class="grid-container xs-hide">
+            <div align="center" class="card">
+                <amp-img src="vivo.png" alt="Vivo" layout="responsive" height="60px" width="70px" ></amp-img>
+                <h1 style="font-size: 2.8vw">TITLE SPONSOR</h1>
+                <p class="title">VIVO</p>
+                <p>CAMERA AND MUSIC</p>         
+            </div>
 
-    <!-- Footer -->
+            <div class="card">
+                <amp-img src="ace-academy.png" alt="Ace-academy" layout="responsive" height="60px" width="70px" ></amp-img>
+                <h1 style="font-size: 2.5vw">POWER SPONSOR</h1>
+                <p class="title">ACE ACADEMY</p>
+                <p>ENGINEERING ACADEMY</p>         
+            </div>
+            
+            <div class="card">
+                <amp-img src="kreatryx.jpg" alt="Kreatryx" layout="responsive" height="60px" width="70px" ></amp-img>
+                <h1 style="font-size: 2.5vw">ASSOCIATE SPONSOR</h1>
+                <p class="title">KREATRYX</p>
+                <p>GATE/PSU/SSC PREPARATION SIMPLIFIED</p>         
+            </div>
+
+            <div class="card">
+                <amp-img style="border: 1px #003f93 solid" srcset="dena_bank.jpg" alt="Dena Bank" layout="responsive" height="60px" width="70px" ></amp-img>
+                <h1 style="font-size: 2.5vw">ASSOCIATE SPONSOR</h1>
+                <p class="title">DENA BANK</p>
+                <p>DENA HAI TOH BHAROSA HAI</p>         
+            </div>
+        </div>    
+        <div class="sm-hide md-hide lg-hide">
+            <div class="card">
+                <amp-img src="vivo.png" alt="Vivo" layout="responsive" height="60px" width="70px" ></amp-img>
+                <h1 style="font-size: 4.2vh">TITLE SPONSOR</h1>
+                <p class="sm-title">VIVO</p>
+                <p style="font-size: 2vh">CAMERA AND MUSIC</p>         
+            </div>
+
+            <div class="card">
+                <amp-img src="ace-academy.png" alt="Ace-academy" layout="responsive" height="60px" width="70px" ></amp-img>
+                <h1 style="font-size: 4.2vh; letter-spacing: 0.01;">POWER SPONSOR</h1>
+                <p class="sm-title">ACE ACADEMY</p>
+                <p style="font-size: 2vh">ENGINEERING ACADEMY</p>         
+            </div>
+            
+            <div class="card">
+                <amp-img src="kreatryx.jpg" alt="Kreatryx" layout="responsive" height="60px" width="70px" ></amp-img>
+                <h1 style="font-size: 4.2vh">ASSOCIATE SPONSOR</h1>
+                <p class="sm-title">KREATRYX</p>
+                <p style="font-size: 2vh">GATE/PSU/SSC PREPARATION SIMPLIFIED</p>         
+            </div>
+
+            <div class="card">
+                <amp-img style="border: 1px #003f93 solid" srcset="dena_bank.jpg" alt="Dena Bank" layout="responsive" height="60px" width="70px" ></amp-img>
+                <h1 style="font-size: 4.2vh">ASSOCIATE SPONSOR</h1>
+                <p class="sm-title">DENA BANK</p>
+                <p style="font-size: 2vh">DENA HAI TOH BHAROSA HAI</p>         
+            </div>
+        </div>
+        <br>
+        <hr class="style-four">
+        <br>
+    </div>    
     
     <div class="footer">
         <div class="img-footer">
